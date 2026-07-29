@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Board</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                <div>
+
+                    <h2>Job Board</h2>
+                    <span>Find Your Dream Job</span>
+
+                </div>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="jobs.html">Browse Jobs</a></li>
+
+                <li><a href="#">Pages</a></li>
+
+                <li><a href="#">Blog</a></li>
+
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-btn">
+
+                <a href="candidate.html" class="login-btn">Log In</a>
+
+                <a href="employer.html" class="post-btn">Post A Job</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!--HERO SECTION-->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h4>4536+ Jobs Listed</h4>
+
+            <h1>
+                Find Your <br>
+                Dream Job
+            </h1>
+
+            <p>
+
+                Find your perfect career opportunity with top companies.
+                Search thousands of jobs and apply in just a few clicks.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="apply.html" class="resume-btn">
+
+                    Upload Your Resume
+
+                </a>
+
+                <a href="jobs.html" class="browse-btn">
+
+                    Browse Jobs
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/hero.png" alt="Hero Image">
+
+        </div>
+
+    </section>
+
+    <!--SEARCH SECTION-->
+
+<section class="search-section">
+
+    <div class="search-container">
+
+        <div class="search-box">
+
+            <label>Keyword</label>
+
+            <input type="text" id="keyword" placeholder="Job Title or Keyword">
+
+        </div>
+
+        <div class="search-box">
+
+            <label>Location</label>
+
+            <select id="location">
+
+                <option value="">Select Location</option>
+                <option>Remote</option>
+                <option>Delhi</option>
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+                <option>Hyderabad</option>
+                <option>Pune</option>
+
+            </select>
+
+        </div>
+
+        <div class="search-box">
+
+            <label>Category</label>
+
+            <select id="category">
+
+                <option value="">Select Category</option>
+                <option>Web Development</option>
+                <option>UI/UX Design</option>
+                <option>Graphic Design</option>
+                <option>Marketing</option>
+                <option>Data Science</option>
+
+            </select>
+
+        </div>
+
+        <button id="findJobBtn">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            Find Job
+
+        </button>
+
+    </div>
+
+</section>
+
+<!--FEATURED JOBS-->
+
+<section class="featured-jobs">
+
+    <div class="section-title">
+
+        <h2>Featured Jobs</h2>
+
+        <p>Discover the latest opportunities from top companies.</p>
+
+    </div>
+
+    <div class="job-container">
+
+        <!-- Card 1 -->
+
+        <div class="job-card">
+
+            <div class="company-logo">
+                <i class="fa-brands fa-google"></i>
+            </div>
+
+            <h3>Frontend Developer</h3>
+
+            <span class="company">Google</span>
+
+            <div class="job-info">
+
+                <p><i class="fa-solid fa-location-dot"></i> Bangalore</p>
+
+                <p><i class="fa-solid fa-money-bill-wave"></i> ₹8 LPA</p>
+
+                <p><i class="fa-solid fa-briefcase"></i> Full Time</p>
+
+            </div>
+
+            <button class="apply-btn">
+                Apply Now
+            </button>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="job-card">
+
+            <div class="company-logo">
+                <i class="fa-brands fa-microsoft"></i>
+            </div>
+
+            <h3>Backend Developer</h3>
+
+            <span class="company">Microsoft</span>
+
+            <div class="job-info">
+
+                <p><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
+
+                <p><i class="fa-solid fa-money-bill-wave"></i> ₹10 LPA</p>
+
+                <p><i class="fa-solid fa-briefcase"></i> Full Time</p>
+
+            </div>
+
+            <button class="apply-btn">
+                Apply Now
+            </button>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="job-card">
+
+            <div class="company-logo">
+                <i class="fa-brands fa-amazon"></i>
+            </div>
+
+            <h3>UI / UX Designer</h3>
+
+            <span class="company">Amazon</span>
+
+            <div class="job-info">
+
+                <p><i class="fa-solid fa-location-dot"></i> Pune</p>
+
+                <p><i class="fa-solid fa-money-bill-wave"></i> ₹7 LPA</p>
+
+                <p><i class="fa-solid fa-briefcase"></i> Remote</p>
+
+            </div>
+
+            <button class="apply-btn">
+                Apply Now
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--POPULAR CATEGORIES-->
+
+<section class="categories">
+
+    <div class="section-title">
+
+        <h2>Popular Categories</h2>
+
+        <p>Browse jobs by category.</p>
+
+    </div>
+
+    <div class="category-container">
+
+        <div class="category-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <span>245 Jobs</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-palette"></i>
+            <h3>UI / UX Design</h3>
+            <span>120 Jobs</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Marketing</h3>
+            <span>180 Jobs</span>
+        </div>
+
+        <div class="category-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>Data Science</h3>
+            <span>95 Jobs</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!--TOP COMPANIES-->
+
+<section class="companies">
+
+    <div class="section-title">
+
+        <h2>Top Companies</h2>
+
+        <p>Trusted by leading companies.</p>
+
+    </div>
+
+    <div class="company-container">
+
+        <div class="company-card">
+            <i class="fa-brands fa-google"></i>
+            <h3>Google</h3>
+        </div>
+
+        <div class="company-card">
+            <i class="fa-brands fa-microsoft"></i>
+            <h3>Microsoft</h3>
+        </div>
+
+        <div class="company-card">
+            <i class="fa-brands fa-amazon"></i>
+            <h3>Amazon</h3>
+        </div>
+
+        <div class="company-card">
+            <i class="fa-brands fa-apple"></i>
+            <h3>Apple</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!--WHY CHOOSE US-->
+
+<section class="why-us">
+
+    <div class="why-image">
+        <img src="images/why-us.png" alt="Why Choose Us">
+    </div>
+
+    <div class="why-content">
+
+        <h2>Why Choose Our Job Board?</h2>
+
+        <p>
+            We connect talented professionals with top companies.
+            Find thousands of verified jobs and apply in just one click.
+        </p>
+
+        <div class="why-box">
+
+            <div class="feature">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Verified Companies</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Easy Job Apply</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>1000+ Daily Jobs</span>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Free Resume Upload</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--LATEST JOBS-->
+
+<section class="latest-jobs">
+
+    <div class="section-title">
+
+        <h2>Latest Jobs</h2>
+
+        <p>Recently posted opportunities.</p>
+
+    </div>
+
+    <div class="latest-container">
+
+        <div class="latest-card">
+
+            <h3>React Developer</h3>
+
+            <p><i class="fa-solid fa-building"></i> Infosys</p>
+
+            <p><i class="fa-solid fa-location-dot"></i> Bangalore</p>
+
+            <p><i class="fa-solid fa-money-bill-wave"></i> ₹9 LPA</p>
+
+            <button class="apply-btn">Apply Now</button>
+
+        </div>
+
+        <div class="latest-card">
+
+            <h3>Java Developer</h3>
+
+            <p><i class="fa-solid fa-building"></i> TCS</p>
+
+            <p><i class="fa-solid fa-location-dot"></i> Noida</p>
+
+            <p><i class="fa-solid fa-money-bill-wave"></i> ₹7 LPA</p>
+
+            <button class="apply-btn">Apply Now</button>
+
+        </div>
+
+        <div class="latest-card">
+
+            <h3>Python Developer</h3>
+
+            <p><i class="fa-solid fa-building"></i> Wipro</p>
+
+            <p><i class="fa-solid fa-location-dot"></i> Hyderabad</p>
+
+            <p><i class="fa-solid fa-money-bill-wave"></i> ₹8 LPA</p>
+
+            <button class="apply-btn">Apply Now</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--TESTIMONIALS-->
+
+<section class="testimonials">
+
+    <div class="section-title">
+
+        <h2>What Our Users Say</h2>
+
+        <p>Trusted by thousands of job seekers.</p>
+
+    </div>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+
+            <img src="https://i.pravatar.cc/100?img=11" alt="User">
+
+            <h3>Rahul Sharma</h3>
+
+            <span>Frontend Developer</span>
+
+            <p>
+                I got my dream job through this platform.
+                The application process was simple and fast.
+            </p>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="https://i.pravatar.cc/100?img=32" alt="User">
+
+            <h3>Priya Singh</h3>
+
+            <span>UI/UX Designer</span>
+
+            <p>
+                Amazing website with lots of opportunities.
+                Highly recommended for freshers.
+            </p>
+
+        </div>
+
+        <div class="testimonial-card">
+
+            <img src="https://i.pravatar.cc/100?img=15" alt="User">
+
+            <h3>Aman Kumar</h3>
+
+            <span>Software Engineer</span>
+
+            <p>
+                I found multiple interview opportunities within a week.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--NEWSLETTER-->
+
+<section class="newsletter">
+
+    <div class="newsletter-content">
+
+        <h2>Subscribe For Job Updates</h2>
+
+        <p>Get the latest jobs directly in your inbox.</p>
+
+        <form id="newsletterForm">
+
+            <input
+                type="email"
+                id="newsletterEmail"
+                placeholder="Enter your email">
+
+            <button type="submit">
+
+                Subscribe
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!--STATISTICS-->
+
+<section class="stats">
+
+    <div class="stat-box">
+
+        <h2>4500+</h2>
+
+        <p>Jobs Posted</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>1200+</h2>
+
+        <p>Companies</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>8000+</h2>
+
+        <p>Candidates</p>
+
+    </div>
+
+    <div class="stat-box">
+
+        <h2>95%</h2>
+
+        <p>Success Rate</p>
+
+    </div>
+
+</section>
+
+<!--FOOTER-->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+
+            <h3>Job Board</h3>
+
+            <p>
+
+                Find your dream career with trusted companies.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="jobs.html">Jobs</a></li>
+
+                <li><a href="candidate.html">Candidate</a></li>
+
+                <li><a href="employer.html">Employer</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>Email : info@jobboard.com</p>
+
+            <p>Phone : +91 9876543210</p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 Job Board | Created by satyam kumar
+
+    </div>
+
+</footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
